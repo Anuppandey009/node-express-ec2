@@ -6,6 +6,14 @@ app.get('/',(req,res)=>{
     
 })
 
+app.get("/m1",(req,res)=>{
+    res.status(200).json({message:"This is my first message"})
+})
+
+app.get("/m2",(req,res)=>{
+    res.status(200).json({message:"This is my second message"})
+})
+
 app.listen(3000,()=>{
     console.log("My application is listening on port 3000");
 })
